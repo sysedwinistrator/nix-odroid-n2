@@ -14,4 +14,5 @@ buildUBoot {
   defconfig = "odroid-n2_defconfig";
   extraMeta.platforms = [ "aarch64-linux" ];
   filesToInstall = [ "u-boot.bin" ".config" ];
+  patches = [];
 }

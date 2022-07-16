@@ -2,7 +2,7 @@
 #
 # make fip ARGS="--arg broken true"
 
-TARGETS:=fip uboot sdImage kernel_5_4 kernel_5_6
+TARGETS:=fip uboot sdImage
 
 print:
 	@echo $(TARGETS) | tr ' ' '\n'
