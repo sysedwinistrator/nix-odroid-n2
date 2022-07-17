@@ -13,6 +13,8 @@
   ];
 
   boot.consoleLogLevel = lib.mkDefault 7;
+  
+  system.stateVersion = "22.05"; # Did you read the comment?
 
   boot.supportedFilesystems = lib.mkForce [ "btrfs" "vfat" "cifs" ];
 
