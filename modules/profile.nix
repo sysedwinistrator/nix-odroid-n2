@@ -19,4 +19,8 @@
   # Since 20.03, you must explicitly specify to use dhcp on an interface
   networking.interfaces.eth0.useDHCP = true;
 
+  services.sshd.enable = true;
+  services.getty.autologinUser = lib.mkDefault "root";
+
+  networking.firewall.enable = false;
 }
